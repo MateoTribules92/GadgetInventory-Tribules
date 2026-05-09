@@ -189,5 +189,5 @@ export const FormScreen = ({ route, navigation }: Props) => {
       </ScrollView>
     </KeyboardAvoidingView>
   );
-  
+
 };

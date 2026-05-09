@@ -62,7 +62,6 @@ export const ListScreen = ({ navigation }: Props) => {
 
   return (
     <View style={listStyles.container}>
-      {/* Header con título y badge de cantidad */}
       <View style={listStyles.headerContainer}>
         <Text style={listStyles.headerTitle}>Mis Gadgets</Text>
         <View style={listStyles.headerBadge}>
@@ -72,7 +71,7 @@ export const ListScreen = ({ navigation }: Props) => {
         </View>
       </View>
 
-      {/* Barra de búsqueda */}
+
       <View style={listStyles.searchContainer}>
         <TextInput
           style={listStyles.searchInput}
@@ -82,7 +81,7 @@ export const ListScreen = ({ navigation }: Props) => {
         />
       </View>
 
-      {/* Lista de gadgets */}
+
       <FlatList
         data={filteredGadgets}
         keyExtractor={(item) => item.id.toString()}
@@ -128,7 +127,6 @@ export const ListScreen = ({ navigation }: Props) => {
         )}
       />
 
-      {/* Botón flotante para agregar gadget */}
       <TouchableOpacity
         style={listStyles.fab}
         onPress={() => navigation.navigate("Form", {})}

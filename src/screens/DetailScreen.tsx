@@ -12,7 +12,6 @@ export const DetailScreen = ({ route, navigation }: Props) => {
   const { id } = route.params;
   const [gadget, setGadget] = useState<Gadget | null>(null);
 
-  // Cargar gadget cada vez que la pantalla está visible
   useFocusEffect(
     useCallback(() => {
       loadGadget();
