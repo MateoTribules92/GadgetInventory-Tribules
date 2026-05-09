@@ -54,10 +54,11 @@ export const ListScreen = ({ navigation }: Props) => {
     }
   };
 
-  // Filtrar gadgets por nombre
+  // Filtrar gadgets
   const filteredGadgets = gadgets.filter((g) =>
-    g.name.toLowerCase().includes(searchText.toLowerCase())
-  );
+  g.name.toLowerCase().includes(searchText.toLowerCase()) ||
+  g.brand.toLowerCase().includes(searchText.toLowerCase())
+);
 
   return (
     <View style={listStyles.container}>
@@ -65,7 +66,9 @@ export const ListScreen = ({ navigation }: Props) => {
       <View style={listStyles.headerContainer}>
         <Text style={listStyles.headerTitle}>Mis Gadgets</Text>
         <View style={listStyles.headerBadge}>
-          <Text style={listStyles.headerBadgeText}>{gadgets.length} ITEMS</Text>
+          <Text style={listStyles.headerBadgeText}>
+            {filteredGadgets.length} {filteredGadgets.length === 1 ? "ITEM" : "ITEMS"}
+        </Text>
         </View>
       </View>
 
