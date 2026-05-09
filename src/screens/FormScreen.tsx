@@ -125,6 +125,7 @@ export const FormScreen = ({ route, navigation }: Props) => {
           value={form.name}
           onChangeText={(value) => handleInputChange("name", value)}
           placeholder="MacBook Pro"
+          placeholderTextColor={formStyles.inputPlaceholder.color}
           editable={true}
         />
 
@@ -134,6 +135,7 @@ export const FormScreen = ({ route, navigation }: Props) => {
           value={form.brand}
           onChangeText={(value) => handleInputChange("brand", value)}
           placeholder="Apple"
+          placeholderTextColor={formStyles.inputPlaceholder.color}
           editable={true}
         />
 
@@ -143,6 +145,7 @@ export const FormScreen = ({ route, navigation }: Props) => {
           value={form.category}
           onChangeText={(value) => handleInputChange("category", value)}
           placeholder="Laptop / Phone / Tablet"
+          placeholderTextColor={formStyles.inputPlaceholder.color}
           editable={true}
         />
 

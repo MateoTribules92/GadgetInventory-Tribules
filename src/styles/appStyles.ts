@@ -50,8 +50,8 @@ export const listStyles = StyleSheet.create({
     marginBottom: 12,
   },
   searchInput: {
-    backgroundColor: COLORS.darkCard,
-    color: COLORS.white,
+    backgroundColor: COLORS.white,
+    color: COLORS.gray,
     padding: 10,
     borderRadius: 8,
   },
@@ -318,6 +318,9 @@ export const formStyles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 8,
     marginBottom: 12,
+  },
+  inputPlaceholder: {
+    color: "#A0A0A0", // gris claro para placeholder
   },
   // Help text debajo de Year
   helpText: {
